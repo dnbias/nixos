@@ -31,8 +31,7 @@ margin-top = 0
 margin-bottom = 34
 
 [bar/main]
-monitor = ${env:MONITOR}
-monitor-strict = true
+
 enable-ipc = true
 wm-restack = bspwm
 # REQUIRED to move the window with hideit.sh
@@ -130,7 +129,7 @@ format-prefix-foreground = ${colors.accent}
 [module/fs]
 type = internal/fs
 mount-0 = /
-mount-1 = /mnt/projects  ; for desktops
+mount-1 = /usr/drive  ; for desktops
 mount-2 = /home          ; for laptop
 interval = 30
 
