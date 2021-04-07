@@ -48,9 +48,10 @@ in {
           jetbrains-mono
           siji
           font-awesome-ttf
+          iosevka
         ];
         fontconfig.defaultFonts = {
-          sansSerif = ["Fira Sans"];
+          sansSerif = ["Noto Sans"];
           monospace = ["Fira Code"];
         };
       };

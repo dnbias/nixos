@@ -14,17 +14,17 @@ let cfg = config.modules.desktop.media.graphics;
 in {
   options.modules.desktop.media.graphics = {
     enable         = mkBoolOpt false;
-    tools.enable   = mkBoolOpt true;
-    raster.enable  = mkBoolOpt true;
-    vector.enable  = mkBoolOpt true;
-    sprites.enable = mkBoolOpt true;
+    tools.enable   = mkBoolOpt false;
+    raster.enable  = mkBoolOpt false;
+    vector.enable  = mkBoolOpt false;
+    sprites.enable = mkBoolOpt false;
     models.enable  = mkBoolOpt false;
   };
 
   config = mkIf cfg.enable {
     user.packages = with pkgs;
       (if cfg.tools.enable then [
-        font-manager   # so many damned fonts...
+        # font-manager   # so many damned fonts...
         imagemagick    # for image manipulation from the shell
       ] else []) ++
 

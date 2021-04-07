@@ -17,7 +17,7 @@
       };
       browsers = {
         default = "firefox";
-	firefox.enable = true;
+	      firefox.enable = true;
       };
       gaming = {
         # steam.enable = true;
@@ -27,7 +27,7 @@
       media = {
         daw.enable = true;
         documents.enable = true;
-        graphics.enable = true;
+        graphics.enable = false;
         mpv.enable = true;
         spotify.enable = true;
       };

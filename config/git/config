@@ -1,12 +1,12 @@
 [user]
-	name = Henrik Lissner
-	email = henrik@lissner.net
+	name = Daniel Biasiotto
+	email = daniel.biasiotto@edu.unito.it
 [core]
 	whitespace = trailing-space
 [init]
 	defaultBranch = main
 [github]
-	user = hlissner
+	user = dnbias
 [rebase]
 	autosquash = true
 [push]
@@ -26,7 +26,7 @@
 	clean = git-lfs clean -- %f
 [url "https://github.com/"]
     insteadOf = gh:
-[url "git@github.com:hlissner/"]
+[url "git@github.com:dnbias/"]
     insteadOf = gh:/
 [url "https://gitlab.com/"]
     insteadOf = gl:
