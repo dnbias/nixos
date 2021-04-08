@@ -13,8 +13,8 @@ in {
     user.packages = with pkgs; [
       mpd
     ];
-  };
-  home.configFile = {
-    "mpd/mpd.conf".source   = "${configDir}/mpd/mpd.conf";
+    home.configFile = {
+      "mpd/mpd.conf".source   = "${configDir}/mpd/mpd.conf";
+    };
   };
 }
