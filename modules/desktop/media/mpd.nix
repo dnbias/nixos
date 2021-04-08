@@ -20,6 +20,4 @@ in {
       "mpd/mpd.conf".source   = "${configDir}/mpd/mpd.conf";
     };
   };
-
-
 }
