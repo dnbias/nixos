@@ -61,11 +61,7 @@ in {
       rustfmt
       unstable.rust-analyzer
       # :lang java
-      jdk
-      meghanada
-      # :tools pdf
-      pdf-tools
-      
+      jdk   
     ];
 
     env.PATH = [ "$XDG_CONFIG_HOME/emacs/bin" ];
