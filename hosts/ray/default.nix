@@ -33,6 +33,7 @@
         documents.enable = true;
         graphics.enable = false;
         mpv.enable = true;
+        mpd.enable = true;
         spotify.enable = true;
         ncmpcpp.enable = true;
         zathura.enable = true;
