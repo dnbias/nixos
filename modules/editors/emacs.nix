@@ -8,6 +8,9 @@ with lib;
 with lib.my;
 let cfg = config.modules.editors.emacs;
     configDir = config.dotfiles.configDir;
+    emacsPackages = let epkgs = pkgs.emacsPackagesFor cfg.package;
+                    in epkgs.overrideScope' cfg.overrides;
+    emacsWithPackages = emacsPackages.emacsWithPackages;
 in {
   options.modules.editors.emacs = {
     enable = mkBoolOpt false;
@@ -69,9 +72,65 @@ in {
 
     modules.shell.zsh.rcFiles = [ "${configDir}/emacs/aliases.zsh" ];
 
-    fonts.fonts = [ pkgs.emacs-all-the-icons-fonts 
-     		    pkgs.iosevka];
+    fonts.fonts = [
+      pkgs.emacs-all-the-icons-fonts
+      pkgs.iosevka
+    ];
 
+    # meta.maintainers = [ maintainers.rycee ];
+
+    # options = {
+    #   programs.emacs = {
+    #     enable = mkEnableOption "Emacs";
+    #     package = mkOption {
+    #       type = types.package;
+    #       default = pkgs.emacs;
+    #       defaultText = literalExample "pkgs.emacs";
+    #       example = literalExample "pkgs.emacs25-nox";
+    #       description = "The Emacs package to use.";
+    #    };
+    #     extraPackages = mkOption {
+    #       default = self: [ ];
+    #       type = hm.types.selectorFunction;
+    #       defaultText = "epkgs: []";
+    #       example = literalExample "epkgs: [ epkgs.emms epkgs.magit ]";
+    #      description = ''
+    #                   Extra packages available to Emacs. To get a list of
+    #                   available packages run:
+    #                   <command>nix-env -f '&lt;nixpkgs&gt;' -qaP -A emacsPackages</command>.
+    #                  '';
+    #     };
+
+    #    overrides = mkOption {
+    #       default = self: super: { };
+    #       type = hm.types.overlayFunction;
+    #       defaultText = "self: super: {}";
+    #       example = literalExample ''
+    #               self: super: rec {
+    #               haskell-mode = self.melpaPackages.haskell-mode;
+    #               # ...
+    #               };
+    #               '';
+    #       description = ''
+    #                   Allows overriding packages within the Emacs package set.
+    #                   '';
+    #     };
+
+    #     finalPackage = mkOption {
+    #       type = types.package;
+    #       visible = false;
+    #       readOnly = true;
+    #       description = ''
+    #                   The Emacs package including any overrides and extra packages.
+    #                   '';
+    #     };
+    #   };
+    # };
+
+    # config = mkIf cfg.enable {
+    #   home.packages = [ cfg.finalPackage ];
+    #   programs.emacs.finalPackage = emacsWithPackages cfg.extraPackages;
+    # };
     # init.doomEmacs = mkIf cfg.doom.enable ''
     #   if [ -d $HOME/.config/emacs ]; then
     #      ${optionalString cfg.doom.fromSSH ''
@@ -85,4 +144,7 @@ in {
     #   fi
     # '';
   };
+
+  
+  
 }
