@@ -59,9 +59,9 @@ in {
       unstable.rust-analyzer
       # :lang java
       jdk
-      emacs26Packages.meghanada
+      meghanada
       # :tools pdf
-      emacs26Packages.pdf-tools
+      pdf-tools
       
     ];
 
