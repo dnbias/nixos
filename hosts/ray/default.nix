@@ -5,6 +5,9 @@
     ./hardware-configuration.nix
   ];
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.0.2u" # for pgadmin
+  ];
   ## Modules
   modules = {
     desktop = {
@@ -58,9 +61,7 @@
     };
     theme.active = "alucard";
   };
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.0.2u"
-  ];
+  
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
