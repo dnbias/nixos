@@ -5,9 +5,7 @@
     ./hardware-configuration.nix
   ];
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.0.2u" # for pgadmin
-  ];
+  
   ## Modules
   modules = {
     desktop = {
@@ -18,7 +16,8 @@
         # godot.enable = true;
         signal.enable = true;
         # telegram.enable = true;
-        pgadmin.enable = true;
+        # pgadmin.enable = true;
+        dbeaver.enable = true;
       };
       browsers = {
         default = "firefox";

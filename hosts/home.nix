@@ -1,10 +1,7 @@
 { config, lib, ... }:
 
 with lib;
-{
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.0.2u" # for pgadmin
-  ];
+{ 
   networking.hosts =
     let hostConfig = {
           "192.168.1.10" = [ "ray" ];
