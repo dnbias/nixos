@@ -5,6 +5,12 @@ with lib.my;
 let cfg = config.modules.desktop.apps.pgadmin;
 
 
+{
+              nixpkgs.config.permittedInsecurePackages = [
+                "openssl-1.0.2u"
+              ];
+            };
+
 
     
 in {
@@ -13,9 +19,6 @@ in {
   };
   
   config = mkIf cfg.enable {
-    permittedInsecurePackages = [
-      "openssl-1.0.2u"
-    ];  
     user.packages = with pkgs; [
       pgadmin
     ];
