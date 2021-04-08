@@ -17,4 +17,8 @@ in {
       "mpd/mpd.conf".source   = "${configDir}/mpd/mpd.conf";
     };
   };
+
+  services = mkIf cfg.enable {
+    mpd.enable = true;
+  };
 }
