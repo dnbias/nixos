@@ -14,6 +14,8 @@
         rofi.enable = true;
         # godot.enable = true;
         signal.enable = true;
+        # telegram.enable = true;
+        pgadmin.enable = true;
       };
       browsers = {
         default = "firefox";
@@ -30,6 +32,7 @@
         graphics.enable = false;
         mpv.enable = true;
         spotify.enable = true;
+        ncmpcpp.enable = true;
       };
       term = {
         default = "xst";
