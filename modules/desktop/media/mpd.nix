@@ -13,12 +13,13 @@ in {
     user.packages = with pkgs; [
       mpd
     ];
+    services = {
+        mpd.enable = true;
+    };
     home.configFile = {
       "mpd/mpd.conf".source   = "${configDir}/mpd/mpd.conf";
     };
   };
 
-  services = mkIf cfg.enable {
-    mpd.enable = true;
-  };
+
 }
