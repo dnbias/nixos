@@ -18,6 +18,7 @@ in {
     };
     home.configFile = {
       "mpd/mpd.conf".source   = "${configDir}/mpd/mpd.conf";
+      "mpd/pid".source   = "${configDir}/mpd/pid";
     };
   };
 }
