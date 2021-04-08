@@ -35,6 +35,7 @@
         mpv.enable = true;
         spotify.enable = true;
         ncmpcpp.enable = true;
+        zathura.enable = true;
       };
       term = {
         default = "xst";
