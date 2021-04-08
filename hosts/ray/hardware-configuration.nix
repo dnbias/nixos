@@ -42,7 +42,7 @@
       fsType = "ntfs";
       options = [
         "nofail" "noauto" "noatime" "x-systemd.automount" "x-systemd.idle-timeout=5min"
-        "nodev" "nosuid" "noexec"
+        "nodev" "nosuid" "exec"
       ];
     };
   };
