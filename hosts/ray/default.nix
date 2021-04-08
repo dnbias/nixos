@@ -72,3 +72,8 @@
   # generated config replicates the default behaviour.
   networking.useDHCP = false;
 }
+{ 
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.0.2u"
+  ];
+}

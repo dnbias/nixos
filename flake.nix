@@ -6,11 +6,6 @@
 #
 # Welcome to ground zero. Where the whole flake gets set up and all its modules
 # are loaded.
-{ 
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.0.2u" # necessary for pgadmin
-  ];
-}
 {
   description = "A grossly incandescent nixos config.";
 
