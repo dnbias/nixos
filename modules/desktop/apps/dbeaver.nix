@@ -12,6 +12,8 @@ in {
     user.packages = with pkgs; [
       dbeaver
       unixODBCDrivers.psql
+      postgis
+      postgresql_jdbc
     ];
   };
 }
