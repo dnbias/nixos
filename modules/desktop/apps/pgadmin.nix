@@ -11,12 +11,11 @@ in {
   options.modules.desktop.apps.pgadmin = {
     enable = mkBoolOpt false;
   };
-  nixpkgs.config = {
-      permittedInsecurePackages = [
-        "openssl-1.0.2u"
-      ];
-    };
+  
   config = mkIf cfg.enable {
+    permittedInsecurePackages = [
+      "openssl-1.0.2u"
+    ];  
     user.packages = with pkgs; [
       pgadmin
     ];
