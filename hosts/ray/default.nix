@@ -58,7 +58,9 @@
     };
     theme.active = "alucard";
   };
-  
+  nixpkgs.config.permittedInsecurePackages = [
+    "openssl-1.0.2u"
+  ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -71,9 +73,4 @@
   # here. Per-interface useDHCP will be mandatory in the future, so this
   # generated config replicates the default behaviour.
   networking.useDHCP = false;
-}
-{ 
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.0.2u"
-  ];
 }
