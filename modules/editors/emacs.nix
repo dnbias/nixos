@@ -62,6 +62,7 @@ in {
       unstable.rust-analyzer
       # :lang java
       jdk   
+      maven
     ];
 
     env.PATH = [ "$XDG_CONFIG_HOME/emacs/bin" ];
