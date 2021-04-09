@@ -13,7 +13,7 @@ in {
     services.mpd = {
       user = "dnbias";
       dataDir = "${configDir}/mpd";
-      musicDirectory = "~/Music";
+      musicDirectory = "${config.user.home}/Music";
       network.listenAddress = "127.0.0.1";
       extraConfig = "
           auto_update "yes"\n
