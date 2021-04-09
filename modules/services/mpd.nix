@@ -11,7 +11,7 @@ in {
 
   config = mkIf cfg.enable {
     services.mpd = {
-      user = "dnbias";
+      user = "mpd";
       dataDir = "${configDir}/mpd";
       musicDirectory = "${config.user.home}/Music";
       network.listenAddress = "127.0.0.1";
@@ -27,8 +27,8 @@ in {
 	    mpd
     ];
 
-    home.configFile = {
-      "mpd".source   = "${configDir}/mpd";
-    };
+    #home.configFile = {
+    # "mpd".source   = "${configDir}/mpd";
+    #};
   };
 }
