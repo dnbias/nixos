@@ -16,9 +16,9 @@ in {
     services = {
         mpd.enable = true;
     };
+    env.MPD_HOME = "$XDG_CONFIG_HOME/mpd";
     home.configFile = {
-      "mpd/mpd.conf".source   = "${configDir}/mpd/mpd.conf";
-      "mpd/pid".source   = "${configDir}/mpd/pid";
+      "mpd".source   = "${configDir}/mpd";
     };
   };
 }
