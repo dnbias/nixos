@@ -5,7 +5,7 @@ with lib.my;
 let cfg = config.modules.services.mpd;
     configDir = config.dotfiles.configDir;
 in {
-  options.modules.desktop.media.mpd = {
+  options.modules.services.mpd = {
     enable = mkBoolOpt false;
   };
 
