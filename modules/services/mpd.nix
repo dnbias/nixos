@@ -23,6 +23,10 @@ in {
             server \"localhost\" }";
       enable = true;
     };
+    user.packages = with pkg {
+	mpd
+    };
+
     home.configFile = {
       "mpd".source   = "${configDir}/mpd";
     };
