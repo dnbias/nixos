@@ -10,25 +10,25 @@ in {
   };
 
   config = mkIf cfg.enable {
-    services.mpd = {
-      user = "mpd";
-      dataDir = "${configDir}/mpd";
-      musicDirectory = "${config.user.home}/Music";
-      network.listenAddress = "127.0.0.1";
-      extraConfig = "
-          auto_update \"yes\"\n
-          audio_output {
-            type \"pulse\"\n
-            name \"My Pulse Device\"\n
-            server \"localhost\" }";
-      enable = true;
-    };
+    #services.mpd = {
+    #  user = "mpd";
+    #  dataDir = "${configDir}/mpd";
+    #  musicDirectory = "${config.user.home}/Music";
+    #  network.listenAddress = "127.0.0.1";
+    #  extraConfig = "
+    #      auto_update \"yes\"\n
+    #      audio_output {
+    #        type \"pulse\"\n
+    #        name \"My Pulse Device\"\n
+    #        server \"localhost\" }";
+    #  enable = true;
+    #};
     user.packages = with pkgs; [
 	    mpd
     ];
 
-    #home.configFile = {
-    # "mpd".source   = "${configDir}/mpd";
-    #};
+    home.configFile = {
+      "mpd".source   = "${configDir}/mpd";
+    };
   };
 }
