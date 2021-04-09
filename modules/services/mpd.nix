@@ -23,9 +23,9 @@ in {
             server \"localhost\" }";
       enable = true;
     };
-    user.packages = with pkg {
-	mpd
-    };
+    user.packages = with pkgs; [
+	    mpd
+    ];
 
     home.configFile = {
       "mpd".source   = "${configDir}/mpd";
