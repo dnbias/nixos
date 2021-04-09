@@ -33,7 +33,6 @@
         documents.enable = true;
         graphics.enable = false;
         mpv.enable = true;
-        mpd.enable = true;
         spotify.enable = true;
         ncmpcpp.enable = true;
         zathura.enable = true;
@@ -59,6 +58,7 @@
     };
     services = {
       ssh.enable = true;
+      mpd.enable = true;
     };
     theme.active = "alucard";
   };

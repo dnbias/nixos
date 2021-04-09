@@ -16,8 +16,8 @@ in {
     };
 
     user.openssh.authorizedKeys.keys =
-      if config.user.name == "hlissner"
-      then [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB71rSnjuC06Qq3NLXQJwSz7jazoB+umydddrxL6vg1a henrik@lissner.net" ]
+      if config.user.name == "dnbias"
+      then [ "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPaCRjwLcOdiIKMgDyeAMkSXNGTlTHswyLuHGjg0j3tC daniel.biasiotto@edu.unito.it"]
       else [];
   };
 }
