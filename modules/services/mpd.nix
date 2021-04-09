@@ -12,9 +12,17 @@ in {
   config = mkIf cfg.enable {
     services.mpd = {
       user = "dnbias";
+      dataDir = "$XDG_CONFIG_HOME/mpd";
+      musicDirectory = "~/Music";
+      listenAddress = "127.0.0.1";
+      extraConfig = "
+          auto_update "yes"\n
+          audio_output {
+            type "pulse"\n
+            name "My Pulse Device"\n
+            server "localhost" }";
       enable = true;
     };
-    env.MPD_HOME = "$XDG_CONFIG_HOME/mpd";
     home.configFile = {
       "mpd".source   = "${configDir}/mpd";
     };
