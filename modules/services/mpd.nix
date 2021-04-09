@@ -14,7 +14,7 @@ in {
       user = "dnbias";
       dataDir = "$XDG_CONFIG_HOME/mpd";
       musicDirectory = "~/Music";
-      listenAddress = "127.0.0.1";
+      network.listenAddress = "127.0.0.1";
       extraConfig = "
           auto_update "yes"\n
           audio_output {
