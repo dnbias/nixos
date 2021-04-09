@@ -12,7 +12,7 @@ in {
   config = mkIf cfg.enable {
     services.mpd = {
       user = "dnbias";
-      dataDir = "$XDG_CONFIG_HOME/mpd";
+      dataDir = "${configDir}/mpd";
       musicDirectory = "~/Music";
       network.listenAddress = "127.0.0.1";
       extraConfig = "
