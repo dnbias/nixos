@@ -23,8 +23,8 @@ in {
             server \"localhost\" }";
       enable = true;
     };
-    home.configFile = {
-      "mpd".source   = "${configDir}/mpd";
-    };
+    #home.configFile = {
+    #  "mpd".source   = "${configDir}/mpd";
+    #};
   };
 }
