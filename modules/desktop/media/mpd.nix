@@ -2,7 +2,7 @@
 
 with lib;
 with lib.my;
-let cfg = config.modules.services.mpd;
+let cfg = config.modules.desktop.media.mpd;
     configDir = config.dotfiles.configDir;
 in {
   options.modules.desktop.media.mpd = {
