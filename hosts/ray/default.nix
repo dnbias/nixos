@@ -36,6 +36,7 @@
         spotify.enable = true;
         ncmpcpp.enable = true;
         zathura.enable = true;
+        mpd.enable = true;
       };
       term = {
         default = "xst";
@@ -58,7 +59,6 @@
     };
     services = {
       ssh.enable = true;
-      mpd.enable = true;
     };
     theme.active = "alucard";
   };
