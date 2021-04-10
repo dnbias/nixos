@@ -31,7 +31,7 @@
     "/" = {
       device = "/dev/sdb3";
       fsType = "ext4";
-      options = [ "noatime" "rw" ];
+      options = [ "noatime" ];
     };
     "/boot" = {
       device = "/dev/sdb1";
