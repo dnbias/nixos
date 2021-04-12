@@ -44,7 +44,7 @@
       };
     };
     editors = {
-      default = "nvim";
+      default = "emacs";
       emacs.enable = true;
       vim.enable = true;
     };
@@ -59,6 +59,12 @@
     };
     services = {
       ssh.enable = true;
+    };
+    dev = {
+      cc.enable = true;
+      java.enable = true;
+      python.enable = true;
+      web.enable = true;
     };
     theme.active = "alucard";
   };
