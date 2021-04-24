@@ -1,4 +1,4 @@
-# modules/themes/alucard/default.nix --- a regal dracula-inspired theme
+# modules/themes/citylights/default.nix
 
 { options, config, lib, pkgs, ... }:
 
@@ -6,7 +6,7 @@ with lib;
 with lib.my;
 let cfg = config.modules.theme;
 in {
-  config = mkIf (cfg.active == "alucard") (mkMerge [
+  config = mkIf (cfg.active == "citylights") (mkMerge [
     # Desktop-agnostic configuration
     {
       modules = {
