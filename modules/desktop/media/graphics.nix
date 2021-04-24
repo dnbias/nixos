@@ -15,6 +15,7 @@ in {
   options.modules.desktop.media.graphics = {
     enable         = mkBoolOpt false;
     tools.enable   = mkBoolOpt false;
+    photo.enable   = mkBoolOpt false;
     raster.enable  = mkBoolOpt false;
     vector.enable  = mkBoolOpt false;
     sprites.enable = mkBoolOpt false;
@@ -27,7 +28,11 @@ in {
         # font-manager   # so many damned fonts...
         imagemagick    # for image manipulation from the shell
       ] else []) ++
-
+      
+      (if cfg.photo.enable then [
+        darktable
+      ] else []) ++
+      
       # replaces illustrator & indesign
       (if cfg.vector.enable then [
         unstable.inkscape

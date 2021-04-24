@@ -12,6 +12,7 @@ bspc monitor -d {1,2,3,4,5}
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
 
+bspc config -m primary bottom_padding 60
 
 # Rules
 bspc rule -r '*'

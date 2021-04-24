@@ -13,9 +13,10 @@
       apps = {
         discord.enable = true;
         rofi.enable = true;
+        ranger.enable = true;
         # godot.enable = true;
         signal.enable = true;
-        # telegram.enable = true;
+        telegram.enable = true;
         # pgadmin.enable = true;
         dbeaver.enable = true;
       };
@@ -31,7 +32,9 @@
       media = {
         daw.enable = true;
         documents.enable = true;
-        graphics.enable = false;
+        graphics.enable = true;
+        graphics.tools.enable = true;
+        graphics.photo.enable = true;
         mpv.enable = true;
         spotify.enable = true;
         ncmpcpp.enable = true;
