@@ -21,6 +21,7 @@ in {
       bear
       gdb
       cmake
+      valgrind
       llvmPackages.libcxx
     ];
   };

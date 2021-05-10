@@ -52,7 +52,7 @@ in {
         ];
         fontconfig.defaultFonts = {
           sansSerif = ["Noto Sans"];
-          monospace = ["Fira Code"];
+          monospace = ["Iosevka"];
         };
       };
 
