@@ -77,9 +77,9 @@
       defaultTemplate = self.templates.minimal;
 
       nixpkgs.config.permittedInsecurePackages = [
-        "libgcrypt-1.5.6" # for staruml
+        "libgcrypt-1.5.6"
       ];
-      
+
       defaultApp."${system}" = {
         type = "app";
         program = ./bin/hey;
