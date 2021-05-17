@@ -55,9 +55,6 @@ with lib.my;
     };
   };
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "libgcrypt-1.5.6"
-  ];
   # Just the bear necessities...
   environment.systemPackages = with pkgs; [
     bind
