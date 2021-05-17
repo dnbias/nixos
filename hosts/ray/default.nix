@@ -32,13 +32,14 @@
       media = {
         daw.enable = true;
         documents.enable = true;
+        documents.ebook.enable = true;
+        documents.pdf.enable = true;
         graphics.enable = true;
         graphics.tools.enable = true;
         graphics.photo.enable = true;
         mpv.enable = true;
         spotify.enable = true;
         ncmpcpp.enable = true;
-        zathura.enable = true;
         mpd.enable = true;
       };
       term = {
