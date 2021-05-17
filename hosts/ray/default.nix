@@ -33,7 +33,7 @@
         # emulators.psx.enable = true;
       };
       media = {
-        daw.enable = true;
+        # daw.enable = true;
         documents.enable = true;
         documents.ebook.enable = true;
         documents.pdf.enable = true;
