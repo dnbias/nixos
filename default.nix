@@ -55,7 +55,7 @@ with lib.my;
     };
   };
 
-  permittedInsecurePackages = [
+  nixpkgs.config.permittedInsecurePackages = [
     "libgcrypt-1.5.6"
   ];
   # Just the bear necessities...
