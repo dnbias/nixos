@@ -5,9 +5,7 @@
     ./hardware-configuration.nix
   ];
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "libgcrypt-1.5.6" # for staruml
-  ];
+  
 
   ## Modules
   modules = {
