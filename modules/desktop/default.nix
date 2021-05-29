@@ -25,6 +25,8 @@ in {
 
     user.packages = with pkgs; [
       feh       # image viewer
+      pass
+      rofi-pass
       xclip
       xdotool
       xorg.xwininfo
