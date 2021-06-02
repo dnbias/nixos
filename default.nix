@@ -64,6 +64,7 @@ with lib.my;
     vim
     wget
     gnumake
+    gnutls
     unzip
   ];
 }
