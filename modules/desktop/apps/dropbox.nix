@@ -4,7 +4,7 @@ with lib;
 with lib.my;
 let cfg = config.modules.desktop.apps.dropbox;
 in {
-  options.modules.desktop.apps.discord = {
+  options.modules.desktop.apps.dropbox = {
     enable = mkBoolOpt false;
   };
 
