@@ -13,6 +13,7 @@
       bspwm.enable = true;
       apps = {
         discord.enable = true;
+        dropbox.enable = true;
         rofi.enable = true;
         ranger.enable = true;
         # godot.enable = true;
@@ -71,7 +72,7 @@
       python.enable = true;
       web.enable = true;
     };
-    theme.active = "alucard";
+    theme.active = "citylights";
   };
   
   boot.loader.systemd-boot.enable = true;

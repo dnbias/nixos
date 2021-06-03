@@ -11,11 +11,11 @@ in {
     {
       modules = {
         theme = {
-          wallpaper = mkDefault ./config/wallpaper.png;
+          wallpaper = mkDefault ./config/wallpaper.jpg;
           gtk = {
-            theme = "Dracula";
+            theme = "Nordic-Polar";
             iconTheme = "Paper";
-            cursorTheme = "Paper";
+            cursorTheme = "Bibata-Modern-Ice";
           };
         };
 
@@ -38,7 +38,8 @@ in {
     # Desktop (X11) theming
     (mkIf config.services.xserver.enable {
       user.packages = with pkgs; [
-        dracula-theme
+        nordic-polar
+        bibata-cursors
         paper-icon-theme # for rofi
       ];
       fonts = {
@@ -64,8 +65,8 @@ in {
         shadow = true;
         shadowOffsets = [ (-10) (-10) ];
         shadowOpacity = 0.22;
-        # activeOpacity = "1.00";
-        # inactiveOpacity = "0.92";
+        activeOpacity = "0.90";
+        inactiveOpacity = "0.82";
         settings = {
           shadow-radius = 12;
           # blur-background = true;
