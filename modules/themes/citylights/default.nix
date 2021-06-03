@@ -65,8 +65,8 @@ in {
         shadow = true;
         shadowOffsets = [ (-10) (-10) ];
         shadowOpacity = 0.22;
-        activeOpacity = "0.90";
-        inactiveOpacity = "0.82";
+        activeOpacity = 0.90;
+        inactiveOpacity = 0.82;
         settings = {
           shadow-radius = 12;
           # blur-background = true;
