@@ -13,12 +13,12 @@ configuration {
 }
 
 * {
-  accent:   #bd93f9;
-  bg:       #1E2029FA;
-  bg-light: #1c1c1c;
-  bg-focus: #282a36;
+  accent:   #5E81AC;
+  bg:       #2E3440;
+  bg-light: #3B4252;
+  bg-focus: #434C5E;
   bg-dark:  #181a23;
-  fg:       #bbc2cf;
+  fg:       #D8DEE9;
   fg-list:  #bbc2cf;
   on:       #8BD49C;
   off:      #cc6666;
@@ -26,10 +26,10 @@ configuration {
   magenta: #bd93f9;
   blue:    #61bfff;
 
-  text-font:      "Fira Sans 15";
-  text-mono-font: "Fira Code 13";
+  text-font:      "Iosevka 14";
+  text-mono-font: "Iosevka 14";
   /* icon-font:      "Hurmit Nerd Font Mono 26"; */
-  icon-font:      "FontAwesome 20";
+  icon-font:      "FontAwesome 16";
 
   background-color: transparent;
   text-color: @fg-list;
@@ -114,7 +114,7 @@ prompt, entry {
   background-color: @bg-focus;
 }
 textbox-icon, prompt {
-  background-color: #2f313d;
+  background-color: #2E3440;
 }
 prompt {
   background-color: @bg-focus;

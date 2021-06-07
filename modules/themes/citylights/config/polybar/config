@@ -23,7 +23,7 @@ fg-alt = #373844
 bg-dark = #181a23
 
 alert = ${colors.yellow}
-accent = #604c7e
+accent = #5E81AC
 
 
 [global/wm]
