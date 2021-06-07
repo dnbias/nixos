@@ -108,7 +108,7 @@ in {
         (mkIf desktop.browsers.qutebrowser.enable {
           "qutebrowser/extra/theme.py".source = ./config/qutebrowser/theme.py;
         })
-        (mkIf desktop.media.document.enable {
+        (mkIf desktop.media.documents.enable {
           "zathura".source = ./config/zathurarc;
         })
       ];
