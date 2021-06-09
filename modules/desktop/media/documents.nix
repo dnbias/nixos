@@ -23,7 +23,7 @@ in {
 
     # TODO calibre/evince/zathura dotfiles
     home.configFile = {
-      "zathura".source = "${configDir}/zathura";
+      "zathura".source = "${config.dotfiles.configDir}/zathurarc";
     };
   };
 }
