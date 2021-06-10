@@ -19,11 +19,11 @@ bwhite = ${xrdb:color15}
 bg = ${xrdb:background}
 fg = ${colors.cyan}
 bg-alt = #1E2029
-fg-alt = #373844
+fg-alt = #4C566A
 bg-dark = #181a23
 
 alert = ${colors.yellow}
-accent = ${colors.bred}
+accent = ${colors.bblue}
 
 
 [global/wm]
