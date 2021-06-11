@@ -15,7 +15,7 @@ in {
           gtk = {
             theme = "Nordic-Polar";
             iconTheme = "Paper";
-            cursorTheme = "Bibata-Modern";
+            cursorTheme = "Bibata";
           };
         };
 
