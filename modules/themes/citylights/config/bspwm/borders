@@ -1,4 +1,4 @@
-#!/bin/sh
+#!etc/bin/env sh
 #
 #   double borders
 #
