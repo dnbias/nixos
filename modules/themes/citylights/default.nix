@@ -79,6 +79,7 @@ in {
       };
 
       # Login screen theme
+      services.xserver.displayManager.lightdm.background = ./config/background.jpg;
       services.xserver.displayManager.lightdm.greeters.mini.extraConfig = ''
         text-color = "#81a1c1"
         password-background-color = "#1E2029"
