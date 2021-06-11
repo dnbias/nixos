@@ -91,6 +91,7 @@ in {
         {
           # Sourced from sessionCommands in modules/themes/default.nix
           "xtheme/90-theme".source = ./config/Xresources;
+          "zathura/zathurarc".source = ./config/zathura/zathurarc;
         }
         (mkIf desktop.bspwm.enable {
           "bspwm/rc.d/polybar".source = ./config/polybar/run.sh;
@@ -109,9 +110,9 @@ in {
         (mkIf desktop.browsers.qutebrowser.enable {
           "qutebrowser/extra/theme.py".source = ./config/qutebrowser/theme.py;
         })
-        (mkIf desktop.media.documents.enable {
-          "zathura/zathurarc".source = ./config/zathura/zathurarc;
-        })
+        #(mkIf desktop.media.documents.enable {
+        #  "zathura/zathurarc".source = ./config/zathura/zathurarc;
+        #})
       ];
     })
   ]);
