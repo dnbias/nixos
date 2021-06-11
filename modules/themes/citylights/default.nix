@@ -12,6 +12,7 @@ in {
       modules = {
         theme = {
           wallpaper = mkDefault ./config/wallpaper.jpg;
+          loginWallpaper = mkDefault ./config/background.jpg;
           gtk = {
             theme = "Nordic-Polar";
             iconTheme = "Paper";
@@ -79,7 +80,6 @@ in {
       };
 
       # Login screen theme
-      cfg.loginWallpaper = ./config/background.jpg;
       services.xserver.displayManager.lightdm.greeters.mini.extraConfig = ''
         text-color = "#81a1c1"
         password-background-color = "#1E2029"
