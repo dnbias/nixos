@@ -15,7 +15,7 @@ in {
           gtk = {
             theme = "Nordic-Polar";
             iconTheme = "Paper";
-            cursorTheme = "Bibata-Modern-Ice";
+            cursorTheme = "Bibata-Modern";
           };
         };
 
@@ -50,9 +50,10 @@ in {
           siji
           font-awesome-ttf
           iosevka
+          etBook
         ];
         fontconfig.defaultFonts = {
-          sansSerif = ["Noto Sans"];
+          sansSerif = ["Roboto"];
           monospace = ["Iosevka"];
         };
       };
