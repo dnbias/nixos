@@ -39,7 +39,7 @@ in {
     # Desktop (X11) theming
     (mkIf config.services.xserver.enable {
       user.packages = with pkgs; [
-        nordic-polar
+        nordic
         bibata-cursors
         paper-icon-theme # for rofi
       ];
