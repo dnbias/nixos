@@ -31,7 +31,7 @@
     "/" = {
       device = "/dev/sdb3";
       fsType = "ext4";
-      options = [ "noatime" ];
+      options = [ "defaults" ];
     };
     "/boot" = {
       device = "/dev/sdb1";
@@ -41,7 +41,7 @@
       device = "/dev/sda1";
       fsType = "ntfs";
       options = [
-        "nofail" "noauto" "noatime" "x-systemd.automount" "x-systemd.idle-timeout=5min"
+        "nofail" "noauto" "x-systemd.automount" "x-systemd.idle-timeout=5min"
         "nodev" "nosuid" "exec"
       ];
     };
