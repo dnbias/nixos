@@ -68,6 +68,7 @@
     };
     dev = {
       cc.enable = true;
+      cs.enable = true;
       java.enable = true;
       python.enable = true;
       web.enable = true;
