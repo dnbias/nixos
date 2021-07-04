@@ -31,6 +31,7 @@ in {
       xdotool
       xorg.xwininfo
       libqalculate  # calculator cli w/ currency conversion
+      unrar
       (makeDesktopItem {
         name = "scratch-calc";
         desktopName = "Calculator";
