@@ -6,9 +6,9 @@
 
 with lib;
 with lib.my;
-let cfg = config.modules.desktop.apps.unity3d;
+let cfg = config.modules.desktop.apps.unity;
 in {
-  options.modules.desktop.apps.unity3d = {
+  options.modules.desktop.apps.unity = {
     enable = mkBoolOpt false;
   };
 

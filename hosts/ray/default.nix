@@ -21,7 +21,7 @@
         telegram.enable = true;
         # pgadmin.enable = true;
         dbeaver.enable = true;
-        unity3d.enable = true;
+        unity.enable = true;
       };
       browsers = {
         default = "firefox";
