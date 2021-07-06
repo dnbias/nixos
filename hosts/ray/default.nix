@@ -21,6 +21,7 @@
         telegram.enable = true;
         # pgadmin.enable = true;
         dbeaver.enable = true;
+        unity3d.enable = true;
       };
       browsers = {
         default = "firefox";
@@ -52,6 +53,7 @@
     editors = {
       default = "emacs";
       emacs.enable = true;
+      vscode.enable = true;
       vim.enable = true;
     };
     shell = {
