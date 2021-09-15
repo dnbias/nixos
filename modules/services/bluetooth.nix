@@ -9,7 +9,10 @@ in {
   };
 
   config = mkIf cfg.enable {
-    services.bluetooth = {
+    hardware.bluetooth = {
+      enable = true;
+    };
+    services.blueman = {
       enable = true;
     };
   };
