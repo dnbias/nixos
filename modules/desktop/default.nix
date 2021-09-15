@@ -32,6 +32,8 @@ in {
       xorg.xwininfo
       libqalculate  # calculator cli w/ currency conversion
       unrar
+      bluez
+      blueman
       (makeDesktopItem {
         name = "scratch-calc";
         desktopName = "Calculator";
