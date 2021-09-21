@@ -9,8 +9,9 @@ in {
   };
 
   config = mkIf cfg.enable {
-    services.torrent.deluge = {
-      enable = true;
-    };
+     user.packages = with pkgs; [
+        deluge
+    ];
+
   };
 }
