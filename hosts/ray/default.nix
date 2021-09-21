@@ -21,6 +21,7 @@
         dbeaver.enable = true;
         unity.enable = true;
         deluge.enable = true;
+        jetbrains.enable = true;
       };
       browsers = {
         default = "firefox";
