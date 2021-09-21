@@ -20,6 +20,7 @@
         # pgadmin.enable = true;
         dbeaver.enable = true;
         unity.enable = true;
+        deluge.enable = true;
       };
       browsers = {
         default = "firefox";
@@ -66,7 +67,6 @@
     services = {
       ssh.enable = true;
       bluetooth.enable = true;
-      deluge.enable = true;
     };
     dev = {
       cc.enable = true;

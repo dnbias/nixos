@@ -2,9 +2,9 @@
 
 with lib;
 with lib.my;
-let cfg = config.modules.services.deluge;
+let cfg = config.modules.desktop.apps.deluge;
 in {
-  options.modules.services.deluge = {
+  options.modules.desktop.apps.deluge = {
     enable = mkBoolOpt false;
   };
 
@@ -12,6 +12,5 @@ in {
      user.packages = with pkgs; [
         deluge
     ];
-
   };
 }
