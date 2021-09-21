@@ -5,8 +5,6 @@
     ./hardware-configuration.nix
   ];
 
-  
-
   ## Modules
   modules = {
     desktop = {
@@ -68,6 +66,7 @@
     services = {
       ssh.enable = true;
       bluetooth.enable = true;
+      deluge.enable = true;
     };
     dev = {
       cc.enable = true;
