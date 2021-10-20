@@ -75,6 +75,7 @@
       java.enable = true;
       python.enable = true;
       haskell.enable = true;
+      agda.enable = true;
       web.enable = true;
     };
     theme.active = "citylights";
