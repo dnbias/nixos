@@ -11,6 +11,7 @@
       bspwm.enable = true;
       apps = {
         discord.enable = true;
+        chatterino.enable = true;
         dropbox.enable = true;
         rofi.enable = true;
         ranger.enable = true;
