@@ -26,8 +26,8 @@ configuration {
   magenta: #bd93f9;
   blue:    #61bfff;
 
-  text-font:      "Iosevka 14";
-  text-mono-font: "Iosevka 14";
+  text-font:      "Letter Gothic 14";
+  text-mono-font: "Letter Gothic 14";
   /* icon-font:      "Hurmit Nerd Font Mono 26"; */
   icon-font:      "FontAwesome 16";
 
@@ -41,7 +41,7 @@ configuration {
 /**** Layout ****/
 window {
   width:    1000px;
-  y-offset: -50px;
+  y-offset: -300px;
   anchor:   north;
   location: center;
   border: 1px;

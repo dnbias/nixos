@@ -59,11 +59,11 @@
 
 
 !! general
-st.scratch.font: Iosevka:pixelsize=14
+st.scratch.font: NotCourierSans:pixelsize=14
 
 
 !! xst
-st.font: Iosevka:pixelsize=14
+st.font: NotCourierSans:pixelsize=14
 st.borderpx: 10
 
 
@@ -73,7 +73,7 @@ URxvt*.background:             blk
 URxvt*.borderless:             1
 URxvt*.buffered:               true
 URxvt*.cursorBlink:            true
-URxvt*.font:                   xft:Iosevka:pixelsize=12
+URxvt*.font:                   xft:NotCourierSans:pixelsize=12
 URxvt*.internalBorder:         10
 URxvt*.letterSpace:            0
 URxvt*.lineSpace:              0
@@ -87,3 +87,12 @@ URxvt.clipboard.autocopy:      true
 URxvt.iso14755:                false
 URxvt.iso14755_52:             false
 URxvt.perl-ext-common:         default,matcher
+
+! font rendering
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 131
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
