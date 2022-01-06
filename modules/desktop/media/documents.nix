@@ -18,7 +18,7 @@ in {
       (mkIf cfg.pdf.enable   evince)
       (mkIf cfg.pdf.enable   xournalpp)
       zathura
-      
+      nixpkgs.texlive.combined.scheme-medium
     ];
 
     # TODO calibre/evince/zathura dotfiles
