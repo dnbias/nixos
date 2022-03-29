@@ -74,7 +74,7 @@
       cc.enable = true;
       cs.enable = true;
       java.enable = true;
-      python.enable = true;
+      #python.enable = true;
       haskell.enable = true;
       agda.enable = true;
       web.enable = true;
