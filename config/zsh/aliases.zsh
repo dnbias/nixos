@@ -50,6 +50,8 @@ alias jc='journalctl -xe'
 alias sc=systemctl
 alias ssc='sudo systemctl'
 
+alias conda-shell='nix-shell ~/.conda-shell.nix'
+
 if command -v exa >/dev/null; then
   alias exa="exa --group-directories-first --git";
   alias l="exa -1";

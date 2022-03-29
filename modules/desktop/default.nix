@@ -29,7 +29,6 @@ in {
       rofi-pass
       xclip
       xdotool
-      cm-super
       xorg.xwininfo
       libqalculate  # calculator cli w/ currency conversion
       unrar
